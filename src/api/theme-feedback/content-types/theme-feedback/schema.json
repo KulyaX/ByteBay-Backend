@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "theme_feedbacks",
+  "info": {
+    "singularName": "theme-feedback",
+    "pluralName": "theme-feedbacks",
+    "displayName": "ThemeFeedback"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "theme": {
+      "type": "string"
+    }
+  }
+}

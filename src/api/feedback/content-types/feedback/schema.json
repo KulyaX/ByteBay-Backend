@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "feedbacks",
+  "info": {
+    "singularName": "feedback",
+    "pluralName": "feedbacks",
+    "displayName": "Feedback"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "text_feedback": {
+      "type": "richtext",
+      "required": true
+    },
+    "theme_feedback": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::theme-feedback.theme-feedback"
+    }
+  }
+}

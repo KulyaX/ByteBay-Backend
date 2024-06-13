@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "platform_params",
+  "info": {
+    "singularName": "platform-param",
+    "pluralName": "platform-params",
+    "displayName": "PlatformParam",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "value": {
+      "type": "string"
+    },
+    "signature": {
+      "type": "string"
+    },
+    "orders": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::order.order",
+      "mappedBy": "platform_params"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "method_uploads",
+  "info": {
+    "singularName": "method-upload",
+    "pluralName": "method-uploads",
+    "displayName": "MethodUpload"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "method": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

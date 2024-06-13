@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "degree_completions",
+  "info": {
+    "singularName": "degree-completion",
+    "pluralName": "degree-completions",
+    "displayName": "degreeCompletion"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "degree": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

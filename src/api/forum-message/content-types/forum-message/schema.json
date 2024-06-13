@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "forum_messages",
+  "info": {
+    "singularName": "forum-message",
+    "pluralName": "forum-messages",
+    "displayName": "ForumMessage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "text_message": {
+      "type": "text",
+      "required": true
+    },
+    "users_permissions_users": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "forum_messages"
+    },
+    "topic": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::topic.topic",
+      "inversedBy": "forum_messages"
+    },
+    "created_date": {
+      "type": "datetime",
+      "required": true
+    }
+  }
+}
